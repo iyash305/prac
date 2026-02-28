@@ -1,0 +1,23 @@
+class Car:
+    def __init__(self,brand,model,year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def car_info(self):
+        return(f"{self.brand}, {self.model}, {self.year} ")
+
+    def car_age(self,current_year):
+        return current_year - self.year
+    
+    def __str__(self):
+        return f"{self.brand}, {self.model}, {self.year}"
+    
+
+car1 = Car("BMW", "G-Wagon", 2023)
+print(car1.car_info())
+print(car1.car_age(2026))
+print(car1)
+
+class Electric_Car(Car):
+    def 
